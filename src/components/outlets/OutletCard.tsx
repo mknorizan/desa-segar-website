@@ -1,0 +1,42 @@
+import { Clock3, MapPin } from 'lucide-react'
+import type { OutletItem, Language } from '../../types/content'
+
+interface OutletCardProps {
+  outlet: OutletItem
+  language: Language
+  directionsLabel: string
+  unavailableLabel: string
+}
+
+export function OutletCard({ outlet, language, directionsLabel, unavailableLabel }: OutletCardProps) {
+  return (
+    <article className="overflow-hidden rounded-2xl bg-white shadow-soft">
+      <img src={outlet.image} alt={outlet.name} loading="lazy" className="h-40 w-full object-cover" />
+      <div className="space-y-3 p-5">
+        <h3 className="text-xl font-bold text-leafGreen">{outlet.name}</h3>
+        <div className="space-y-2 text-sm text-charcoal/80">
+          <p className="flex items-start gap-2">
+            <MapPin size={16} className="mt-0.5 text-brandBlue" />
+            {outlet.location[language]}
+          </p>
+          <p className="flex items-start gap-2">
+            <Clock3 size={16} className="mt-0.5 text-brandBlue" />
+            {outlet.hours[language]}
+          </p>
+        </div>
+        {outlet.directionsUrl ? (
+          <a
+            href={outlet.directionsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex text-sm font-semibold text-brandBlue hover:underline"
+          >
+            {directionsLabel}
+          </a>
+        ) : (
+          <span className="inline-flex text-sm font-semibold text-charcoal/55">{unavailableLabel}</span>
+        )}
+      </div>
+    </article>
+  )
+}
