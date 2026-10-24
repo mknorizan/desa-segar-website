@@ -1,7 +1,7 @@
 import type { FooterLinkGroup } from '../types/content'
 
 export const company = {
-  logo: '/images/desa-segar-logo-enhanced.jpeg',
+  logo: '/images/desa-segar-logo-enhanced-removebg.png',
   contactEmail: '',
   contactPhone: '',
   whatsappLink: '',
