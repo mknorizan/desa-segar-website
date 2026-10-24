@@ -199,7 +199,11 @@ export const translations: Record<Language, Translations> = {
       privacy: 'Dasar Privasi',
       terms: 'Terma Penggunaan',
       socialLabel: 'Ikuti Kami',
-      placeholderContact: 'Maklumat hubungan rasmi akan dikemas kini.',
+      placeholderContact: `BEST & KWIK MART SDN BHD (1313318-H)
+                           No 9A, Jalan BK 5A/2, Bandar Kinrara,
+                           47180 Puchong, Selangor Darul Ehsan
+                           Tel : +603-80706337
+                           Fax : +603-80704421`,
     },
     common: {
       learnMore: 'Ketahui lanjut',
@@ -322,7 +326,11 @@ export const translations: Record<Language, Translations> = {
       privacy: 'Privacy Policy',
       terms: 'Terms of Use',
       socialLabel: 'Follow Us',
-      placeholderContact: 'Official contact information will be updated after verification.',
+      placeholderContact: `BEST & KWIK MART SDN BHD (1313318-H)
+                           No 9A, Jalan BK 5A/2, Bandar Kinrara,
+                           47180 Puchong, Selangor Darul Ehsan
+                           Tel : +603-80706337
+                           Fax : +603-80704421`,
     },
     common: {
       learnMore: 'Learn more',

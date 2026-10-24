@@ -61,7 +61,7 @@ export function Footer() {
                 ) : null}
               </ul>
             ) : (
-              <p className="text-sm text-charcoal/70">{t.footer.placeholderContact}</p>
+              <p className="whitespace-pre-line text-sm text-charcoal/70">{t.footer.placeholderContact}</p>
             )}
           </div>
         </div>
