@@ -13,15 +13,17 @@ export function OutletCard({ outlet, language, directionsLabel, unavailableLabel
     <article className="overflow-hidden rounded-2xl bg-white shadow-soft">
       <img src={outlet.image} alt={outlet.name} loading="lazy" className="h-40 w-full object-cover" />
       <div className="space-y-3 p-5">
-        <h3 className="text-xl font-bold text-leafGreen">{outlet.name}</h3>
+        <h3 className="text-xl font-bold text-leafGreen">{outlet.name.toLocaleUpperCase()}</h3>
+        <div className="space-y-2 text-xs text-charcoal/80">
+          <p className="flex items-start gap-2">
+            <MapPin size={16} strokeWidth={2.2} className="mt-0.5 shrink-0 text-brandBlue" />
+            {outlet.location[language].toLocaleUpperCase()}
+          </p>
+        </div>
         <div className="space-y-2 text-sm text-charcoal/80">
           <p className="flex items-start gap-2">
-            <MapPin size={16} className="mt-0.5 text-brandBlue" />
-            {outlet.location[language]}
-          </p>
-          <p className="flex items-start gap-2">
-            <Clock3 size={16} className="mt-0.5 text-brandBlue" />
-            {outlet.hours[language]}
+            <Clock3 size={18} strokeWidth={2.2} className="mt-0.5 shrink-0 text-brandBlue" />
+            {outlet.hours[language].toLocaleUpperCase()}
           </p>
         </div>
         {outlet.directionsUrl ? (
