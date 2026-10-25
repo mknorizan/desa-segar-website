@@ -20,7 +20,7 @@ export function Button({
     'inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brandBlue'
   const styles =
     variant === 'primary'
-      ? 'bg-brandBlue text-white hover:bg-blue-600'
+      ? 'bg-brandBlue text-white hover:bg-brandBlue/80'
       : 'border border-brandGreen text-leafGreen hover:bg-brandGreen/10'
 
   if (to) {
