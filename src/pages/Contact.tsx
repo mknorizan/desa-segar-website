@@ -50,7 +50,7 @@ export function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-4 lg:grid-cols-2">
+            <div className="mt-6 space-y-4">
               <section className="rounded-2xl bg-[#EAF8F0] p-5">
                 <h3 className="flex items-center gap-2 text-2xl font-bold text-leafGreen">
                   <MessageCircle size={20} className="text-brandGreen" />
