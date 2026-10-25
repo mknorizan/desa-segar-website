@@ -33,7 +33,7 @@ export function ContactPage() {
                 ) : null}
               </ul>
             ) : (
-              <p className="mt-4 whitespace-pre-line text-charcoal/80">{t.footer.placeholderContact}</p>
+              <div className="mt-4 text-charcoal/80">{t.footer.placeholderContact()}</div>
             )}
           </article>
 

@@ -1,3 +1,4 @@
+import { createElement, type ReactNode } from 'react'
 import type { Language } from '../types/content'
 
 export interface Translations {
@@ -72,7 +73,7 @@ export interface Translations {
     privacy: string
     terms: string
     socialLabel: string
-    placeholderContact: string
+    placeholderContact: () => ReactNode
   }
   common: {
     learnMore: string
@@ -199,11 +200,13 @@ export const translations: Record<Language, Translations> = {
       privacy: 'Dasar Privasi',
       terms: 'Terma Penggunaan',
       socialLabel: 'Ikuti Kami',
-      placeholderContact: `BEST & KWIK MART SDN BHD (1313318-H)
-                           No 9A, Jalan BK 5A/2, Bandar Kinrara,
-                           47180 Puchong, Selangor Darul Ehsan
-                           Tel : +603-80706337
-                           Fax : +603-80704421`,
+      placeholderContact: () => [
+        createElement('div', { key: 'company', className: 'font-semibold text-charcoal' }, 'BEST & KWIK MART SDN BHD'),
+        createElement('div', { key: 'address-1', className: 'mt-1 text-charcoal/80' }, 'No 9A, Jalan BK 5A/2, Bandar Kinrara,'),
+        createElement('div', { key: 'address-2', className: 'text-charcoal/80' }, '47180 Puchong, Selangor Darul Ehsan'),
+        createElement('div', { key: 'tel', className: 'mt-2 text-charcoal/80' }, 'Tel : +603-80706337'),
+        createElement('div', { key: 'fax', className: 'text-charcoal/80' }, 'Fax : +603-80704421'),
+      ],
     },
     common: {
       learnMore: 'Ketahui lanjut',
@@ -326,11 +329,13 @@ export const translations: Record<Language, Translations> = {
       privacy: 'Privacy Policy',
       terms: 'Terms of Use',
       socialLabel: 'Follow Us',
-      placeholderContact: `BEST & KWIK MART SDN BHD (1313318-H)
-                           No 9A, Jalan BK 5A/2, Bandar Kinrara,
-                           47180 Puchong, Selangor Darul Ehsan
-                           Tel : +603-80706337
-                           Fax : +603-80704421`,
+      placeholderContact: () => [
+        createElement('div', { key: 'company', className: 'font-semibold text-charcoal' }, 'BEST & KWIK MART SDN BHD'),
+        createElement('div', { key: 'address-1', className: 'mt-1 text-charcoal/80' }, 'No 9A, Jalan BK 5A/2, Bandar Kinrara,'),
+        createElement('div', { key: 'address-2', className: 'text-charcoal/80' }, '47180 Puchong, Selangor Darul Ehsan'),
+        createElement('div', { key: 'tel', className: 'mt-2 text-charcoal/80' }, 'Tel : +603-80706337'),
+        createElement('div', { key: 'fax', className: 'text-charcoal/80' }, 'Fax : +603-80704421'),
+      ],
     },
     common: {
       learnMore: 'Learn more',
