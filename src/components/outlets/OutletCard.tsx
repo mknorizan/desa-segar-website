@@ -8,9 +8,18 @@ interface OutletCardProps {
   showMap?: boolean
 }
 
+function resolveMapEmbedUrl(outletMapEmbedUrl: string | undefined, locationText: string) {
+  if (!outletMapEmbedUrl) {
+    return `https://www.google.com/maps?q=${encodeURIComponent(locationText)}&output=embed`
+  }
+
+  const iframeSrcMatch = outletMapEmbedUrl.match(/src=["']([^"']+)["']/i)
+  return iframeSrcMatch?.[1] ?? outletMapEmbedUrl
+}
+
 export function OutletCard({ outlet, language, directionsLabel, showMap = false }: OutletCardProps) {
   const locationText = outlet.location[language].replace(/\s+/g, ' ').trim()
-  const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(locationText)}&output=embed`
+  const mapEmbedUrl = resolveMapEmbedUrl(outlet.mapEmbedUrl, locationText)
   const mapDirectionsUrl =
     outlet.directionsUrl ?? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationText)}`
 
@@ -43,15 +52,6 @@ export function OutletCard({ outlet, language, directionsLabel, showMap = false 
                 className="h-48 w-full sm:h-52"
               />
             </div>
-
-            <a
-              href={mapDirectionsUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex text-sm font-semibold text-brandBlue hover:underline"
-            >
-              {directionsLabel}
-            </a>
           </div>
         ) : (
           <a

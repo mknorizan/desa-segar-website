@@ -19,6 +19,7 @@ export interface OutletItem {
   name: string
   location: Record<Language, string>
   hours: Record<Language, string>
+  mapEmbedUrl?: string
   directionsUrl?: string
 }
 
