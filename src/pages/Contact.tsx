@@ -50,15 +50,15 @@ export function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-6 space-y-4">
-              <section className="rounded-2xl bg-[#EAF8F0] p-5">
+            <div className="mt-5 space-y-3">
+              <section className="rounded-2xl bg-[#EAF8F0] p-4">
                 <h3 className="flex items-center gap-2 text-2xl font-bold text-leafGreen">
                   <MessageCircle size={20} className="text-brandGreen" />
                   {t.pages.contact.whatsappTitle}
                 </h3>
                 <p className="mt-2 text-sm text-charcoal/80">{t.pages.contact.whatsappDescription}</p>
 
-                <div className="mt-4 rounded-xl bg-brandGreen/8 p-4 text-sm text-charcoal/80">
+                <div className="mt-3 rounded-xl bg-brandGreen/8 p-3 text-sm text-charcoal/80">
                   <p className="font-semibold text-leafGreen">{t.pages.contact.whatsappExampleLabel}</p>
                   <p className="mt-2 italic leading-relaxed">"{t.pages.contact.whatsappExampleMessage}"</p>
                 </div>
@@ -68,7 +68,7 @@ export function ContactPage() {
                     href={whatsappLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brandGreen px-5 py-3 text-sm font-semibold text-white transition hover:bg-brandGreen/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandGreen focus-visible:ring-offset-2"
+                    className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brandGreen px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brandGreen/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandGreen focus-visible:ring-offset-2"
                   >
                     <MessageCircle size={17} />
                     {t.pages.contact.whatsappButton}
@@ -78,7 +78,7 @@ export function ContactPage() {
                     <button
                       type="button"
                       disabled
-                      className="mt-4 inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-brandGreen/55 px-5 py-3 text-sm font-semibold text-white"
+                      className="mt-3 inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-brandGreen/55 px-5 py-2.5 text-sm font-semibold text-white"
                     >
                       <MessageCircle size={17} />
                       {t.pages.contact.whatsappButton}
@@ -88,14 +88,14 @@ export function ContactPage() {
                 )}
               </section>
 
-              <section className="rounded-2xl bg-[#EDF8FE] p-5">
+              <section className="rounded-2xl bg-[#EDF8FE] p-4">
                 <h3 className="flex items-center gap-2 text-2xl font-bold text-brandBlue">
                   <Mail size={20} />
                   {t.pages.contact.emailTitle}
                 </h3>
                 <p className="mt-2 text-sm text-charcoal/80">{t.pages.contact.emailDescription}</p>
 
-                <form className="mt-4 space-y-3" noValidate>
+                <form className="mt-3 space-y-2.5" noValidate>
                   <div>
                     <label htmlFor="contact-email" className="mb-1 block text-sm font-semibold text-charcoal/80">
                       {t.pages.contact.emailLabel}
@@ -107,7 +107,7 @@ export function ContactPage() {
                       onChange={(event) => setEmail(event.target.value)}
                       onBlur={() => setHasBlurredEmail(true)}
                       placeholder={t.pages.contact.emailPlaceholder}
-                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-charcoal outline-none transition placeholder:text-charcoal/45 focus-visible:border-brandBlue focus-visible:ring-2 focus-visible:ring-brandBlue/25"
+                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm text-charcoal outline-none transition placeholder:text-charcoal/45 focus-visible:border-brandBlue focus-visible:ring-2 focus-visible:ring-brandBlue/25"
                     />
                     {showEmailError ? <p className="mt-1 text-xs text-red-600">{t.pages.contact.emailInvalid}</p> : null}
                   </div>
@@ -120,9 +120,9 @@ export function ContactPage() {
                       id="contact-message"
                       value={message}
                       onChange={(event) => setMessage(event.target.value)}
-                      rows={3}
+                      rows={2}
                       placeholder={t.pages.contact.messagePlaceholder}
-                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-charcoal outline-none transition placeholder:text-charcoal/45 focus-visible:border-brandBlue focus-visible:ring-2 focus-visible:ring-brandBlue/25"
+                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm text-charcoal outline-none transition placeholder:text-charcoal/45 focus-visible:border-brandBlue focus-visible:ring-2 focus-visible:ring-brandBlue/25"
                     />
                   </div>
 
@@ -130,7 +130,7 @@ export function ContactPage() {
                     type="button"
                     disabled
                     aria-disabled="true"
-                    className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-brandBlue/55 px-5 py-3 text-sm font-semibold text-white"
+                    className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-brandBlue/55 px-5 py-2.5 text-sm font-semibold text-white"
                   >
                     <Send size={16} />
                     {t.pages.contact.sendEmail}
