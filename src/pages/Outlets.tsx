@@ -56,7 +56,7 @@ export function OutletsPage() {
                 outlet={outlet}
                 language={language}
                 directionsLabel={t.outlets.getDirections}
-                unavailableLabel={t.outlets.directionsUnavailable}
+                showMap
               />
             ))}
           </div>

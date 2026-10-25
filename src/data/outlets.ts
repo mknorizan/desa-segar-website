@@ -24,7 +24,7 @@ export const outlets: OutletItem[] = [
   {
     id: 'alam-impian',
     image: outletImage,
-    name: 'PASAR RAYA DESA SEGAR AL',
+    name: 'PASAR RAYA DESA SEGAR ALAM IMPIAN',
     location: {
       bm: `M, No 55,57 & 59, 35/M, Jalan Persiaran Panglima Hitam, 
            Alam Impian, 40470 Shah Alam, Selangor`,

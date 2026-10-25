@@ -33,7 +33,7 @@ export function OutletHighlights() {
               outlet={outlet}
               language={language}
               directionsLabel={t.outlets.getDirections}
-              unavailableLabel={t.outlets.directionsUnavailable}
+              showMap={true}
             />
           ))}
         </div>
