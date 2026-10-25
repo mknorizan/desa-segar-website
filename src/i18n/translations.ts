@@ -62,7 +62,38 @@ export interface Translations {
     about: { title: string; intro: string }
     products: { title: string; intro: string }
     outlets: { title: string; intro: string; noResult: string }
-    contact: { title: string; intro: string; enquiry: string; outletsLink: string }
+    contact: {
+      title: string
+      intro: string
+      eyebrow: string
+      leftCardTitle: string
+      leftCardDescription: string
+      whatsappTitle: string
+      whatsappDescription: string
+      whatsappExampleLabel: string
+      whatsappExampleMessage: string
+      whatsappButton: string
+      whatsappUnavailable: string
+      emailTitle: string
+      emailDescription: string
+      emailLabel: string
+      emailPlaceholder: string
+      messageLabel: string
+      messagePlaceholder: string
+      sendEmail: string
+      emailInvalid: string
+      emailComingSoon: string
+      enquiryTitle: string
+      enquiryDescription: string
+      phoneLabel: string
+      phoneHoursLabel: string
+      faxLabel: string
+      headOfficeLabel: string
+      mapLink: string
+      mapTitle: string
+      closingTitle: string
+      closingDescription: string
+    }
   }
   footer: {
     description: string
@@ -186,8 +217,36 @@ export const translations: Record<Language, Translations> = {
       contact: {
         title: 'Hubungi Kami | Pasaraya Desa Segar',
         intro: 'Hubungi kami untuk pertanyaan umum dan maklumat lanjut.',
-        enquiry: 'Pertanyaan Umum',
-        outletsLink: 'Lihat Direktori Cawangan',
+        eyebrow: 'KAMI SEDIA MEMBANTU',
+        leftCardTitle: 'Chat atau E-mel Kami',
+        leftCardDescription: 'Perlukan bantuan atau ada soalan? Hubungi kami dan kami akan membalas secepat mungkin.',
+        whatsappTitle: 'WhatsApp',
+        whatsappDescription: 'Chat terus melalui WhatsApp untuk bantuan yang lebih pantas.',
+        whatsappExampleLabel: 'Contoh mesej:',
+        whatsappExampleMessage:
+          'Hi, saya ingin bertanya tentang pembelian pukal untuk hasil segar anda. Boleh kongsikan maklumat lanjut? Terima kasih!',
+        whatsappButton: 'Chat di WhatsApp',
+        whatsappUnavailable: 'Nombor WhatsApp rasmi belum dikonfigurasi. Sila kemas kini sebelum pelancaran.',
+        emailTitle: 'E-mel Kami',
+        emailDescription: 'Lebih selesa melalui e-mel? Isi maklumat anda dan kami akan hubungi semula.',
+        emailLabel: 'Alamat e-mel anda',
+        emailPlaceholder: 'nama@contoh.com',
+        messageLabel: 'Mesej anda (pilihan)',
+        messagePlaceholder: 'Tuliskan mesej anda di sini',
+        sendEmail: 'Hantar E-mel',
+        emailInvalid: 'Sila masukkan alamat e-mel yang sah.',
+        emailComingSoon: 'Penghantaran e-mel akan tersedia tidak lama lagi.',
+        enquiryTitle: 'Pertanyaan Umum',
+        enquiryDescription:
+          'Untuk pertanyaan umum, kerjasama perniagaan, atau maklumat syarikat, sila hubungi kami menggunakan butiran di bawah.',
+        phoneLabel: 'Telefon',
+        phoneHoursLabel: 'Isn - Jum, 8AM - 5PM',
+        faxLabel: 'Faks',
+        headOfficeLabel: 'Ibu Pejabat',
+        mapLink: 'Lihat di Google Maps',
+        mapTitle: 'Peta lokasi Ibu Pejabat BEST & KWIK MART SDN BHD',
+        closingTitle: 'Kami menantikan maklum balas anda!',
+        closingDescription: 'Sokongan dan maklum balas anda membantu kami memberi perkhidmatan yang lebih baik.',
       },
     },
     footer: {
@@ -315,8 +374,36 @@ export const translations: Record<Language, Translations> = {
       contact: {
         title: 'Contact Us | Pasaraya Desa Segar',
         intro: 'Get in touch with us for general enquiries and company information.',
-        enquiry: 'General Enquiries',
-        outletsLink: 'View Outlet Directory',
+        eyebrow: "WE'RE HERE TO HELP",
+        leftCardTitle: 'Chat or Email Us',
+        leftCardDescription: "Need help or have a question? Reach out to us and we'll get back to you as soon as possible.",
+        whatsappTitle: 'WhatsApp',
+        whatsappDescription: 'Chat with us directly on WhatsApp for faster assistance.',
+        whatsappExampleLabel: 'Example message:',
+        whatsappExampleMessage:
+          'Hi, I would like to enquire about bulk purchase for your fresh produce. Could you please share more information? Thank you!',
+        whatsappButton: 'Chat on WhatsApp',
+        whatsappUnavailable: 'Official WhatsApp number is not configured yet. Update it before launch.',
+        emailTitle: 'Email Us',
+        emailDescription: "Prefer to email? Fill in your details and we'll get back to you.",
+        emailLabel: 'Your email address',
+        emailPlaceholder: 'name@example.com',
+        messageLabel: 'Your message (optional)',
+        messagePlaceholder: 'Write your message here',
+        sendEmail: 'Send Email',
+        emailInvalid: 'Please enter a valid email address.',
+        emailComingSoon: 'Email submission is coming soon.',
+        enquiryTitle: 'General Enquiries',
+        enquiryDescription:
+          'For general enquiries, business partnerships, or company information, please contact us using the details below.',
+        phoneLabel: 'Phone',
+        phoneHoursLabel: 'Mon - Fri, 8AM - 5PM',
+        faxLabel: 'Fax',
+        headOfficeLabel: 'Head Office',
+        mapLink: 'View on Google Maps',
+        mapTitle: 'Map location for BEST & KWIK MART SDN BHD Head Office',
+        closingTitle: 'We look forward to hearing from you!',
+        closingDescription: 'Your feedback and support help us serve you better.',
       },
     },
     footer: {
