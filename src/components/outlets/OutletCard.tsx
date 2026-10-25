@@ -24,21 +24,25 @@ export function OutletCard({ outlet, language, directionsLabel, showMap = false 
     outlet.directionsUrl ?? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationText)}`
 
   return (
-    <article className="overflow-hidden rounded-2xl bg-white shadow-soft">
+    <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-soft">
       <img src={outlet.image} alt={outlet.name} loading="lazy" className="h-40 w-full object-cover" />
-      <div className="space-y-3 p-5">
-        <h3 className="text-xl font-bold text-leafGreen">{outlet.name.toLocaleUpperCase()}</h3>
-        <div className="space-y-2 text-xs text-charcoal/80">
-          <p className="flex items-start gap-2">
-            <MapPin size={16} strokeWidth={2.2} className="mt-0.5 shrink-0 text-brandBlue" />
-            {outlet.location[language].toLocaleUpperCase()}
-          </p>
-        </div>
-        <div className="space-y-2 text-sm text-charcoal/80">
-          <p className="flex items-start gap-2">
-            <Clock3 size={18} strokeWidth={2.2} className="mt-0.5 shrink-0 text-brandBlue" />
-            {outlet.hours[language].toLocaleUpperCase()}
-          </p>
+      <div className="flex h-full flex-col space-y-3 p-5">
+        <div className={showMap ? 'min-h-[160px] space-y-3' : 'space-y-3'}>
+          <h3 className="text-xl font-bold text-leafGreen">{outlet.name.toLocaleUpperCase()}</h3>
+          <div className="space-y-2">
+            <div className="space-y-2 text-xs text-charcoal/80">
+              <p className="flex items-start gap-2">
+                <MapPin size={16} strokeWidth={2.2} className="mt-0.5 shrink-0 text-brandBlue" />
+                {locationText.toLocaleUpperCase()}
+              </p>
+            </div>
+            <div className="space-y-2 text-sm text-charcoal/80">
+              <p className="flex items-start gap-2">
+                <Clock3 size={18} strokeWidth={2.2} className="mt-0.5 shrink-0 text-brandBlue" />
+                {outlet.hours[language].toLocaleUpperCase()}
+              </p>
+            </div>
+          </div>
         </div>
 
         {showMap ? (
@@ -49,7 +53,7 @@ export function OutletCard({ outlet, language, directionsLabel, showMap = false 
                 src={mapEmbedUrl}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="h-48 w-full sm:h-52"
+                className="h-48 w-full sm:h-55"
               />
             </div>
           </div>
@@ -58,7 +62,7 @@ export function OutletCard({ outlet, language, directionsLabel, showMap = false 
             href={mapDirectionsUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex text-sm font-semibold text-brandBlue hover:underline"
+            className="mt-auto inline-flex text-sm font-semibold text-brandBlue hover:underline"
           >
             {directionsLabel}
           </a>
