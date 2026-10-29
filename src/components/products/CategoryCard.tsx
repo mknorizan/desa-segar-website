@@ -1,12 +1,15 @@
-import { Beef, Fish, House, Leaf, ShoppingBasket } from 'lucide-react'
+import { Apple, Beef, Fish, GlassWater, House, Leaf, Milk, Snowflake } from 'lucide-react'
 import type { CategoryItem, Language } from '../../types/content'
 
 const icons = {
   leaf: Leaf,
+  apple: Apple,
+  snowflake: Snowflake,
   fish: Fish,
   beef: Beef,
+  milk: Milk,
+  'glass-water': GlassWater,
   house: House,
-  'shopping-basket': ShoppingBasket,
 } as const
 
 export function CategoryCard({
