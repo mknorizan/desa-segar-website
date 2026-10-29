@@ -103,6 +103,7 @@ export function ContactPage() {
                     <input
                       id="contact-email"
                       type="email"
+                      disabled={true}
                       value={email}
                       onChange={(event) => setEmail(event.target.value)}
                       onBlur={() => setHasBlurredEmail(true)}
@@ -118,6 +119,7 @@ export function ContactPage() {
                     </label>
                     <textarea
                       id="contact-message"
+                      disabled={true}
                       value={message}
                       onChange={(event) => setMessage(event.target.value)}
                       rows={2}
