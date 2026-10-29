@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom'
-import { categories } from '../../data/categories'
 import { company, footerLinkGroups, headOfficeContact } from '../../data/company'
 import { useI18n } from '../../i18n/I18nContext'
 import { Container } from '../common/Container'
+
+const footerCategories = [
+  { bm: 'Sayur-sayuran & Buah-buahan Segar', en: 'Fresh Vegetables & Fruits' },
+  { bm: 'Makanan Sejuk Beku', en: 'Frozen Food' },
+  { bm: 'Makanan Laut', en: 'Seafood' },
+  { bm: 'Daging, Ayam & Tenusu', en: 'Meat, Poultry & Dairies' },
+  { bm: 'Minuman & Keperluan Rumah', en: 'Beverages & Household Essentials' },
+] as const
 
 export function Footer() {
   const { language, t } = useI18n()
@@ -40,8 +47,8 @@ export function Footer() {
           <div>
             <h3 className="mb-3 text-sm font-bold text-leafGreen">{t.footer.productCategories}</h3>
             <ul className="space-y-2 text-sm text-charcoal/85">
-              {categories.map((category) => (
-                <li key={category.id}>{category.title[language]}</li>
+              {footerCategories.map((category) => (
+                <li key={category.en}>{category[language]}</li>
               ))}
             </ul>
           </div>
