@@ -126,13 +126,17 @@ export function AboutPage() {
       title: language === 'bm' ? 'Komitmen Komuniti' : 'Community Commitment',
       body:
         language === 'bm' ? (
-          <p>
-            Sebagai pasar raya komuniti, Desa Segar Supermarket komited untuk berkhidmat dan menyokong masyarakat di
-            kawasan sekitar kami. Kami percaya bahawa hubungan yang kukuh dengan pelanggan dapat dibina melalui layanan
-            yang mesra, lokasi yang mudah diakses serta produk yang memenuhi keperluan harian keluarga. Seiring dengan
-            pertumbuhan syarikat, kami terus berusaha menyumbang secara positif kepada pembangunan komuniti setempat dan
-            menjadi sebahagian daripada kehidupan seharian yang dipercayai oleh pelanggan.
-          </p>
+          <>
+            <p>
+              Sebagai pasar raya komuniti, Pasaraya Desa Segar komited untuk berkhidmat dan menyokong masyarakat di
+              kawasan sekitar kami. Kami percaya bahawa hubungan yang kukuh dengan pelanggan dapat dibina melalui layanan
+              yang mesra, lokasi yang mudah diakses serta produk yang memenuhi keperluan harian keluarga.
+            </p>
+            <p>
+              Seiring dengan pertumbuhan syarikat, kami terus berusaha menyumbang secara positif kepada pembangunan komuniti setempat dan
+              menjadi sebahagian daripada kehidupan seharian yang dipercayai oleh pelanggan.
+            </p>
+          </>
         ) : (
           <p>
             As a neighbourhood supermarket, Desa Segar Supermarket is committed to serving and supporting the communities

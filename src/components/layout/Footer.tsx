@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import { categories } from '../../data/categories'
-import { company, footerLinkGroups } from '../../data/company'
+import { company, footerLinkGroups, headOfficeContact } from '../../data/company'
 import { useI18n } from '../../i18n/I18nContext'
 import { Container } from '../common/Container'
 
 export function Footer() {
   const { language, t } = useI18n()
   const year = new Date().getFullYear()
-  const hasContact = company.contactEmail || company.contactPhone || company.whatsappLink
+  const hasContact = company.contactEmail || company.contactPhone
 
   return (
     <footer className="border-t border-slate-200 bg-white">
@@ -49,17 +49,20 @@ export function Footer() {
           <div>
             <h3 className="mb-3 text-sm font-bold text-leafGreen">{t.footer.contact}</h3>
             {hasContact ? (
-              <ul className="space-y-2 text-sm text-charcoal/85">
-                {company.contactEmail ? <li>{company.contactEmail}</li> : null}
-                {company.contactPhone ? <li>{company.contactPhone}</li> : null}
-                {company.whatsappLink ? (
-                  <li>
-                    <a className="text-brandBlue hover:underline" href={company.whatsappLink} target="_blank" rel="noreferrer">
-                      WhatsApp
-                    </a>
-                  </li>
-                ) : null}
-              </ul>
+              <div className="space-y-3 text-sm text-charcoal/85">
+                <div>
+                  <p className="font-semibold text-charcoal">{headOfficeContact.companyName}</p>
+                  <p>{headOfficeContact.addressLine1}</p>
+                  <p>{headOfficeContact.addressLine2}</p>
+                  <p className="mt-2">Tel : {headOfficeContact.phone}</p>
+                  <p>Fax : {headOfficeContact.fax}</p>
+                </div>
+
+                <ul className="space-y-2">
+                  {company.contactEmail ? <li>{company.contactEmail}</li> : null}
+                  {company.contactPhone ? <li>{company.contactPhone}</li> : null}
+                </ul>
+              </div>
             ) : (
               <div className="text-sm text-charcoal/70">{t.footer.placeholderContact()}</div>
             )}

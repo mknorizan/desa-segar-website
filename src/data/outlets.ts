@@ -1,12 +1,9 @@
 import type { OutletItem } from '../types/content'
 
-const outletImage =
-  'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80'
-
 export const outlets: OutletItem[] = [
   {
     id: 'bukit-jalil',
-    image: outletImage,
+    image: '/images/outlet/LTAT.png',
     name: 'PASAR RAYA DESA SEGAR LTAT',
     location: {
       bm: `G-3A, G-5 & G-6 Kompleks Niaga Taman LTAT.2, 
@@ -25,7 +22,7 @@ export const outlets: OutletItem[] = [
   },
   {
     id: 'alam-impian',
-    image: outletImage,
+    image: '/images/outlet/AI.jpeg',
     name: 'PASAR RAYA DESA SEGAR ALAM IMPIAN',
     location: {
       bm: `M, No 55,57 & 59, 35/M, Jalan Persiaran Panglima Hitam, 
@@ -43,7 +40,7 @@ export const outlets: OutletItem[] = [
   },
   {
     id: 'bandar-seri-putra',
-    image: outletImage,
+    image: '/images/outlet/BSP.png',
     name: 'PASAR RAYA DESA SEGAR BSP',
     location: {
       bm: `No 3,5,7-G, 
@@ -64,7 +61,7 @@ export const outlets: OutletItem[] = [
   },
   {
     id: 'semenyih',
-    image: outletImage,
+    image: '/images/outlet/SMY.png',
     name: 'PASAR RAYA DESA SEGAR SEMENYIH',
     location: {
       bm: `No 19,21 & 23-G Plaza Dato' Mohd Said, Jalan Tps 2/1, 
@@ -81,7 +78,7 @@ export const outlets: OutletItem[] = [
   },
   {
     id: 'pengadang-baru',
-    image: outletImage,
+    image: '/images/outlet/TPB.png',
     name: 'PASAR RAYA DESA SEGAR PENGADANG BARU',
     location: {
       bm: `LOT 1927,1928 & 1929, BANGUNAN PERKASA, MUKIM GELUGOR KEDAI, 

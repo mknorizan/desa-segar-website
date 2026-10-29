@@ -13,7 +13,7 @@ export const company = {
 }
 
 // Replace this with the official business WhatsApp number before launch, digits only with country code.
-export const officialWhatsAppNumber = ''
+export const officialWhatsAppNumber = '601172271960'
 
 export const headOfficeContact = {
   companyName: 'BEST & KWIK MART SDN BHD',

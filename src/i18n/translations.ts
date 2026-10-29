@@ -224,7 +224,7 @@ export const translations: Record<Language, Translations> = {
         whatsappDescription: 'Chat terus melalui WhatsApp untuk bantuan yang lebih pantas.',
         whatsappExampleLabel: 'Contoh mesej:',
         whatsappExampleMessage:
-          'Hi, saya ingin bertanya tentang pembelian pukal untuk hasil segar anda. Boleh kongsikan maklumat lanjut? Terima kasih!',
+          'Hi Desa Segar! Saya ingin bertanya tentang ketersediaan produk.',
         whatsappButton: 'Chat di WhatsApp',
         whatsappUnavailable: 'Nombor WhatsApp rasmi belum dikonfigurasi. Sila kemas kini sebelum pelancaran.',
         emailTitle: 'E-mel Kami',
@@ -381,7 +381,7 @@ export const translations: Record<Language, Translations> = {
         whatsappDescription: 'Chat with us directly on WhatsApp for faster assistance.',
         whatsappExampleLabel: 'Example message:',
         whatsappExampleMessage:
-          'Hi, I would like to enquire about bulk purchase for your fresh produce. Could you please share more information? Thank you!',
+          'Hi Desa Segar! I\'d like to enquire about the availability of a product.',
         whatsappButton: 'Chat on WhatsApp',
         whatsappUnavailable: 'Official WhatsApp number is not configured yet. Update it before launch.',
         emailTitle: 'Email Us',
