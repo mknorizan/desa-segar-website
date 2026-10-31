@@ -27,7 +27,7 @@ export function ProductCategories() {
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {categories.map((category) => (
+          {categories.slice(0, 5).map((category) => (
             <CategoryCard key={category.id} category={category} language={language} />
           ))}
         </div>
