@@ -33,6 +33,16 @@ export interface Translations {
     description: string
     viewAll: string
   }
+  sara: {
+    label: string
+    title: string
+    description: string
+    steps: [string, string, string]
+    cta: string
+    disclaimer: string
+    myKad: string
+    logoAlt: string
+  }
   whyChoose: {
     label: string
     headingLine1: string
@@ -149,6 +159,17 @@ export const translations: Record<Language, Translations> = {
       description:
         'Daripada hasil segar hingga keperluan harian, Desa Segar menawarkan pelbagai produk berkualiti untuk keperluan keluarga anda.',
       viewAll: 'Lihat Semua Produk',
+    },
+    sara: {
+      label: 'SUMBANGAN ASAS RAHMAH (SARA)',
+      title: 'Anda boleh gunakan bantuan SARA di Pasaraya Desa Segar!',
+      description:
+        'Penerima yang layak boleh menggunakan MyKad untuk membeli barangan keperluan asas yang diluluskan.',
+      steps: ['Pilih barangan kelayakan', 'Tunjukkan MyKad', 'Selesaikan pembayaran'],
+      cta: 'Lawati Laman SARA',
+      disclaimer: 'Tertakluk kepada barangan yang diluluskan dan kedai yang mengambil bahagian.',
+      myKad: 'MyKad',
+      logoAlt: 'Logo rasmi program Sumbangan Asas Rahmah (SARA)',
     },
     whyChoose: {
       label: 'KENAPA PILIH DESA SEGAR',
@@ -308,6 +329,17 @@ export const translations: Record<Language, Translations> = {
       description:
         "From fresh produce to everyday essentials, Desa Segar offers a wide range of quality products to meet your family's needs.",
       viewAll: 'View All Products',
+    },
+    sara: {
+      label: 'SUMBANGAN ASAS RAHMAH (SARA)',
+      title: 'You can use SARA assistance at Desa Segar Supermarket!',
+      description:
+        'Eligible recipients can use their MyKad to purchase approved essential goods.',
+      steps: ['Select eligible items', 'Show your MyKad', 'Complete payment'],
+      cta: 'Visit SARA Website',
+      disclaimer: 'Subject to approved items and participating stores.',
+      myKad: 'MyKad',
+      logoAlt: 'Official Sumbangan Asas Rahmah (SARA) programme logo',
     },
     whyChoose: {
       label: 'WHY CHOOSE DESA SEGAR',

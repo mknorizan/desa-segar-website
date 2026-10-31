@@ -2,6 +2,7 @@ import { CommunitySection } from '../components/home/CommunitySection'
 import { HeroSection } from '../components/home/HeroSection'
 import { OutletHighlights } from '../components/home/OutletHighlights'
 import { ProductCategories } from '../components/home/ProductCategories'
+import { SaraPromoSection } from '../components/home/SaraPromoSection'
 import { WhyChooseUs } from '../components/home/WhyChooseUs'
 import { useI18n } from '../i18n/I18nContext'
 import { usePageMeta } from '../hooks/usePageMeta'
@@ -15,6 +16,7 @@ export function HomePage() {
       <HeroSection />
       <ProductCategories />
       <WhyChooseUs />
+      <SaraPromoSection />
       <OutletHighlights />
       <CommunitySection />
     </>
