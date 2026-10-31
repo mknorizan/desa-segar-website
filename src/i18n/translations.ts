@@ -42,6 +42,7 @@ export interface Translations {
     disclaimer: string
     myKad: string
     logoAlt: string
+    basketAlt: string
   }
   whyChoose: {
     label: string
@@ -170,6 +171,7 @@ export const translations: Record<Language, Translations> = {
       disclaimer: 'Tertakluk kepada barangan yang diluluskan dan kedai yang mengambil bahagian.',
       myKad: 'MyKad',
       logoAlt: 'Logo rasmi program Sumbangan Asas Rahmah (SARA)',
+      basketAlt: 'Ilustrasi bakul membeli-belah hijau dengan barangan keperluan asas',
     },
     whyChoose: {
       label: 'KENAPA PILIH DESA SEGAR',
@@ -340,6 +342,7 @@ export const translations: Record<Language, Translations> = {
       disclaimer: 'Subject to approved items and participating stores.',
       myKad: 'MyKad',
       logoAlt: 'Official Sumbangan Asas Rahmah (SARA) programme logo',
+      basketAlt: 'Green shopping basket illustration with essential groceries',
     },
     whyChoose: {
       label: 'WHY CHOOSE DESA SEGAR',

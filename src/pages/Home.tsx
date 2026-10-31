@@ -15,8 +15,8 @@ export function HomePage() {
     <>
       <HeroSection />
       <ProductCategories />
-      <WhyChooseUs />
       <SaraPromoSection />
+      <WhyChooseUs />
       <OutletHighlights />
       <CommunitySection />
     </>
