@@ -12,6 +12,7 @@ interface AboutSection {
 export function AboutPage() {
   const { language, t } = useI18n()
   usePageMeta(t.pages.about.title, t.pages.about.intro)
+  const aboutHeroImage = '/images/about-us/about-us.jpeg'
 
   const sections: AboutSection[] = [
     {
@@ -21,14 +22,14 @@ export function AboutPage() {
         language === 'bm' ? (
           <>
             <p>
-                Best & Kwik Mart Sdn. Bhd., syarikat di sebalik jenama Pasaraya Desa Segar, telah membina kehadiran yang
-                semakin kukuh di Malaysia menerusi lima cawangan yang terletak di lokasi strategik. Berkhidmat untuk komuniti
-                di Semenyih, Bangi, Bukit Jalil, Shah Alam dan Terengganu, kami komited untuk memenuhi keperluan harian
-                pelanggan sambil menyumbang kepada pembangunan ekonomi setempat.
+              Best & Kwik Mart Sdn. Bhd., syarikat di sebalik jenama Pasaraya Desa Segar, telah membina kehadiran yang
+              semakin kukuh di Malaysia menerusi lima cawangan yang terletak di lokasi strategik. Berkhidmat untuk komuniti
+              di Semenyih, Bangi, Bukit Jalil, Shah Alam dan Terengganu, kami komited untuk memenuhi keperluan harian
+              pelanggan sambil menyumbang kepada pembangunan ekonomi setempat.
             </p>
             <p>
-                Dengan menawarkan pelbagai produk berkualiti, harga yang berpatutan serta persekitaran membeli-belah yang selesa 
-                dan mesra, kami berusaha untuk menjadikan setiap kunjungan sebagai pengalaman yang menyenangkan dan memuaskan.
+              Dengan menawarkan pelbagai produk berkualiti, harga yang berpatutan serta persekitaran membeli-belah yang selesa
+              dan mesra, kami berusaha untuk menjadikan setiap kunjungan sebagai pengalaman yang menyenangkan dan memuaskan.
             </p>
           </>
         ) : (
@@ -150,12 +151,26 @@ export function AboutPage() {
   ]
 
   return (
-    <section className="bg-softMint/50 py-14 lg:py-20">
+    <section className="bg-softMint/50 pb-14 pt-8 lg:pb-20 lg:pt-10">
       <Container>
-        <h1 className="text-4xl font-extrabold text-leafGreen md:text-5xl">{t.pages.about.title.split('|')[0].trim()}</h1>
-        <p className="mt-4 max-w-3xl text-lg text-charcoal/80">{t.pages.about.intro}</p>
+        <div className="grid items-stretch gap-0 lg:grid-cols-[1fr_1.1fr]">
+          <div className="relative z-10 p-6 sm:p-8 lg:p-10">
+              <h1 className="text-4xl font-extrabold text-leafGreen md:text-5xl">{t.pages.about.title.split('|')[0].trim()}</h1>
+              <p className="mt-4 max-w-2xl text-lg text-charcoal/80">{t.pages.about.intro}</p>
+          </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="relative min-h-[230px] sm:min-h-[300px] lg:min-h-[360px]">
+            <img
+              src={aboutHeroImage}
+              alt={language === 'bm' ? 'Suasana pasaraya dengan hasil segar' : 'Supermarket lifestyle scene with fresh produce'}
+              loading="lazy"
+              className="h-full w-full object-cover object-[62%_center]"
+            />
+            <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-[#f4fbf6] via-[#f4fbf6]/55 to-transparent sm:w-36 lg:w-56" />
+          </div>
+        </div>
+
+        <div className="mt-6 grid gap-6 px-1 sm:mt-7 sm:px-2 md:grid-cols-2 lg:mt-8 lg:px-6">
           {sections.map((section) => (
             <article key={section.key} className="rounded-2xl bg-white p-6 shadow-soft">
               <h2 className="text-2xl font-bold text-leafGreen">{section.title}</h2>
