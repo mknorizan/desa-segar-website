@@ -1,4 +1,4 @@
-import { Apple, Beef, Fish, GlassWater, House, Leaf, Milk, Snowflake } from 'lucide-react'
+import { Apple, Beef, Fish, GlassWater, House, Leaf, Milk, ShoppingBasket, Snowflake } from 'lucide-react'
 import type { CategoryItem, Language } from '../../types/content'
 
 const icons = {
@@ -9,6 +9,7 @@ const icons = {
   beef: Beef,
   milk: Milk,
   'glass-water': GlassWater,
+  'shopping-basket': ShoppingBasket,
   house: House,
 } as const
 

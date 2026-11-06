@@ -4,8 +4,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'fresh-vegetables',
     icon: 'leaf',
-    image:
-      'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/vegetables.jpg',
     title: {
       bm: 'Sayur-sayuran Segar',
       en: 'Fresh Vegetables',
@@ -18,8 +17,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'fresh-fruits',
     icon: 'apple',
-    image:
-      'https://images.unsplash.com/photo-1778439800832-a4869a46e537?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/fruits.jpg',
     title: {
       bm: 'Buah-buahan Segar',
       en: 'Fresh Fruits',
@@ -32,8 +30,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'frozen-food',
     icon: 'snowflake',
-    image:
-      'https://images.unsplash.com/photo-1651383140368-9b3ee59c2981?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/frozen-foods.jpeg',
     title: {
       bm: 'Makanan Sejuk Beku',
       en: 'Frozen Food',
@@ -46,8 +43,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'seafood',
     icon: 'fish',
-    image:
-      'https://images.unsplash.com/photo-1576330383200-2bf325cfec52?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/seafood.jpeg',
     title: {
       bm: 'Makanan Laut',
       en: 'Seafood',
@@ -60,22 +56,20 @@ export const categories: CategoryItem[] = [
   {
     id: 'household-essentials',
     icon: 'house',
-    image:
-      'https://images.unsplash.com/photo-1755752919883-e5d0912e2321?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/household-items.jpg',
     title: {
       bm: 'Keperluan Rumah',
-      en: 'Household Essentials',
+      en: 'Household Items',
     },
     description: {
       bm: 'Keperluan penjagaan dan kebersihan rumah untuk kegunaan harian.',
-      en: 'Home care and cleaning essentials for everyday use.',
+      en: 'Home care and cleaning items for everyday use.',
     },
   },
   {
     id: 'dairies',
     icon: 'milk',
-    image:
-      'https://images.unsplash.com/photo-1566454825481-4e48f80aa4d7?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/dairies.jpg',
     title: {
       bm: 'Produk Tenusu',
       en: 'Dairies',
@@ -88,8 +82,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'meat-poultry',
     icon: 'beef',
-    image:
-      'https://images.unsplash.com/photo-1625643269470-5d3e7b69fa34?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/poultry.jpg',
     title: {
       bm: 'Daging & Ayam',
       en: 'Meat & Poultry',
@@ -102,8 +95,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'beverages',
     icon: 'glass-water',
-    image:
-      'https://images.unsplash.com/photo-1556767576-aa7f4d92262b?auto=format&fit=crop&w=900&q=80',
+    image: '/images/product/beverages.jpg',
     title: {
       bm: 'Minuman',
       en: 'Beverages',
@@ -111,6 +103,84 @@ export const categories: CategoryItem[] = [
     description: {
       bm: 'Pilihan minuman harian daripada jus hingga minuman ringan.',
       en: 'Everyday beverage options from juices to soft drinks.',
+    },
+  },
+  {
+    id: 'snacks',
+    icon: 'shopping-basket',
+    image: '/images/product/snacks.jpg',
+    title: {
+      bm: 'Snek',
+      en: 'Snacks',
+    },
+    description: {
+      bm: 'Pilihan snek lazat untuk dinikmati pada bila-bila masa.',
+      en: 'A tasty selection of snacks for any time of day.',
+    },
+  },
+  {
+    id: 'spices',
+    icon: 'leaf',
+    image: '/images/product/spices.jpeg',
+    title: {
+      bm: 'Rempah-ratus',
+      en: 'Spices',
+    },
+    description: {
+      bm: 'Aneka rempah-ratus untuk menambah aroma dan rasa masakan.',
+      en: 'A range of spices to enrich your cooking with aroma and flavor.',
+    },
+  },
+  {
+    id: 'frozen-meats',
+    icon: 'snowflake',
+    image: '/images/product/frozen-meats.jpg',
+    title: {
+      bm: 'Daging Sejuk Beku',
+      en: 'Frozen Meats',
+    },
+    description: {
+      bm: 'Pilihan daging sejuk beku untuk penyediaan hidangan yang mudah.',
+      en: 'Frozen meat options for convenient meal preparation.',
+    },
+  },
+  {
+    id: 'condiments',
+    icon: 'shopping-basket',
+    image: '/images/product/condiments.jpeg',
+    title: {
+      bm: 'Perencah & Sos',
+      en: 'Condiments',
+    },
+    description: {
+      bm: 'Pelbagai perencah dan sos untuk melengkapkan rasa hidangan anda.',
+      en: 'A variety of condiments and sauces to complete your meals.',
+    },
+  },
+  {
+    id: 'spreads',
+    icon: 'shopping-basket',
+    image: '/images/product/spreads.jpeg',
+    title: {
+      bm: 'Sapuan Roti',
+      en: 'Spreads',
+    },
+    description: {
+      bm: 'Pilihan sapuan roti seperti jem, mentega, dan kaya untuk sarapan harian.',
+      en: 'A selection of spreads like jam, butter, and kaya for everyday breakfasts.',
+    },
+  },
+  {
+    id: 'pre-mixed-beverages',
+    icon: 'glass-water',
+    image: '/images/product/pre-mixed-beverages.jpeg',
+    title: {
+      bm: 'Minuman Panas',
+      en: 'Hot Beverages',
+    },
+    description: {
+      bm: 'Pilihan kopi, teh, dan coklat untuk dinikmati setiap hari.',
+      en: 'A selection of coffee, tea, and chocolate for everyday enjoyment.',
     },
   },
 ]
