@@ -3,7 +3,7 @@ import { Button } from '../common/Button'
 import { Container } from '../common/Container'
 import { useI18n } from '../../i18n/I18nContext'
 
-const heroImage = '/images/hero/desa-segar-supermarket-1.jpeg'
+const heroImage = '/images/hero/desa-segar-hero.jpg'
 
 export function HeroSection() {
   const { t } = useI18n()

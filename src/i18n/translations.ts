@@ -145,7 +145,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       label: 'KESEGARAN UNTUK SETIAP KEJIRANAN',
-      titleLine1: 'Barangan Runcit Segar.',
+      titleLine1: 'Barangan Segar.',
       titleLine2: 'Keluarga Ceria.',
       description:
         'Membawa kualiti, kesegaran, dan nilai harian lebih dekat kepada komuniti anda.',
