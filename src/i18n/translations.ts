@@ -334,7 +334,7 @@ export const translations: Record<Language, Translations> = {
     },
     sara: {
       label: 'SUMBANGAN ASAS RAHMAH (SARA)',
-      title: 'You can use SARA assistance at Desa Segar Supermarket!',
+      title: 'SARA assistance accepted at Desa Segar Supermarket!',
       description:
         'Eligible recipients can use their MyKad to purchase approved essential goods.',
       steps: ['Select eligible items', 'Show your MyKad', 'Complete payment'],

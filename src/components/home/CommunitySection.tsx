@@ -10,9 +10,13 @@ export function CommunitySection() {
 
   return (
     <section className="relative overflow-hidden">
-      <img src={communityImage} alt="Community-friendly grocery experience" className="h-[300px] w-full object-cover sm:h-[360px]" />
+      <img
+        src={communityImage}
+        alt="Community-friendly grocery experience"
+        className="h-[400px] w-full object-cover object-center sm:h-[420px] lg:h-[360px]"
+      />
       <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/45 to-black/20" />
-      <Container className="absolute inset-0 flex items-center">
+      <Container className="absolute inset-0 flex items-start pb-8 pt-10 sm:items-center sm:pb-0 sm:pt-0">
         <div className="max-w-2xl text-white">
           <p className="mb-3 text-xs font-bold tracking-[0.2em] text-brandGreen">{t.commitment.label}</p>
           <h2 className="text-4xl font-extrabold leading-tight md:text-5xl">
