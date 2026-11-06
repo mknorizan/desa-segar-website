@@ -188,7 +188,7 @@ export const categories: CategoryItem[] = [
     icon: 'shopping-basket',
     image: '/images/product/canned-food-2.jpg',
     title: {
-      bm: 'Makanan Dalam Tin',
+      bm: 'Makanan Tin',
       en: 'Canned Food',
     },
     description: {

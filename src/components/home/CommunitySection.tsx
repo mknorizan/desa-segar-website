@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom'
 import { useI18n } from '../../i18n/I18nContext'
 import { Container } from '../common/Container'
 
-const communityImage =
-  'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80'
+const communityImage = '/images/community/community.png'
 
 export function CommunitySection() {
   const { t } = useI18n()
@@ -13,7 +12,7 @@ export function CommunitySection() {
       <img
         src={communityImage}
         alt="Community-friendly grocery experience"
-        className="h-[400px] w-full object-cover object-center sm:h-[420px] lg:h-[360px]"
+        className="h-[400px] w-full object-cover object-top sm:h-[420px] lg:h-[480px]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/45 to-black/20" />
       <Container className="absolute inset-0 flex items-start pb-8 pt-10 sm:items-center sm:pb-0 sm:pt-0">
