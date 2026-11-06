@@ -3,7 +3,7 @@ import { useI18n } from '../../i18n/I18nContext'
 import { Container } from '../common/Container'
 
 const icons = [Leaf, Gem, Store, Users]
-const whyImage = '/images/why/why.jpeg'
+const whyImage = '/images/why/why-2.jpg'
 
 export function WhyChooseUs() {
   const { t } = useI18n()

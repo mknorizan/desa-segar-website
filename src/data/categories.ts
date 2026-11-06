@@ -17,7 +17,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'fresh-fruits',
     icon: 'apple',
-    image: '/images/product/fruits.jpg',
+    image: '/images/product/fruits-2.jpg',
     title: {
       bm: 'Buah-buahan',
       en: 'Fresh Fruits',
@@ -56,7 +56,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'household-essentials',
     icon: 'house',
-    image: '/images/product/household-items.jpg',
+    image: '/images/product/household-items-2.jpeg',
     title: {
       bm: 'Asas Rumah',
       en: 'Household Items',
@@ -108,7 +108,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'snacks',
     icon: 'shopping-basket',
-    image: '/images/product/snacks.jpg',
+    image: '/images/product/snacks-2.jpeg',
     title: {
       bm: 'Snek',
       en: 'Snacks',
@@ -147,7 +147,7 @@ export const categories: CategoryItem[] = [
   {
     id: 'condiments',
     icon: 'shopping-basket',
-    image: '/images/product/condiments.jpeg',
+    image: '/images/product/condiments-2.jpg',
     title: {
       bm: 'Perencah & Sos',
       en: 'Condiments',
@@ -181,6 +181,19 @@ export const categories: CategoryItem[] = [
     description: {
       bm: 'Pilihan kopi, teh, dan coklat untuk dinikmati setiap hari.',
       en: 'Coffee, tea, and chocolate for everyday enjoyment.',
+    },
+  },
+  {
+    id: 'canned-food',
+    icon: 'shopping-basket',
+    image: '/images/product/canned-food-2.jpg',
+    title: {
+      bm: 'Makanan Dalam Tin',
+      en: 'Canned Food',
+    },
+    description: {
+      bm: 'Pilihan makanan dalam tin untuk simpanan harian.',
+      en: 'Canned food options for everyday pantry storage.',
     },
   },
 ]
