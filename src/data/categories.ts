@@ -6,12 +6,12 @@ export const categories: CategoryItem[] = [
     icon: 'leaf',
     image: '/images/product/vegetables.jpg',
     title: {
-      bm: 'Sayur-sayuran Segar',
-      en: 'Fresh Vegetables',
+      bm: 'Sayuran Segar',
+      en: 'Vegetables',
     },
     description: {
       bm: 'Pilihan sayur-sayuran segar setiap hari untuk hidangan sihat keluarga anda.',
-      en: 'Daily-selected fresh vegetables for healthy family meals.',
+      en: 'Daily fresh vegetables for healthy family meals.',
     },
   },
   {
@@ -19,7 +19,7 @@ export const categories: CategoryItem[] = [
     icon: 'apple',
     image: '/images/product/fruits.jpg',
     title: {
-      bm: 'Buah-buahan Segar',
+      bm: 'Buah-buahan',
       en: 'Fresh Fruits',
     },
     description: {
@@ -32,12 +32,12 @@ export const categories: CategoryItem[] = [
     icon: 'snowflake',
     image: '/images/product/frozen-foods.jpeg',
     title: {
-      bm: 'Makanan Sejuk Beku',
+      bm: 'Makanan Beku',
       en: 'Frozen Food',
     },
     description: {
       bm: 'Pelbagai pilihan makanan sejuk beku yang mudah dan praktikal.',
-      en: 'A convenient range of frozen food for quick meal prep.',
+      en: 'A range of frozen food for quick meal prep.',
     },
   },
   {
@@ -50,7 +50,7 @@ export const categories: CategoryItem[] = [
     },
     description: {
       bm: 'Pilihan makanan laut segar untuk masakan harian yang lazat.',
-      en: 'Fresh seafood selections for delicious daily cooking.',
+      en: 'Fresh seafood selections for daily cooking.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const categories: CategoryItem[] = [
     icon: 'house',
     image: '/images/product/household-items.jpg',
     title: {
-      bm: 'Keperluan Rumah',
+      bm: 'Asas Rumah',
       en: 'Household Items',
     },
     description: {
@@ -76,7 +76,7 @@ export const categories: CategoryItem[] = [
     },
     description: {
       bm: 'Susu, keju, yogurt, dan produk tenusu segar untuk keluarga anda.',
-      en: 'Milk, cheese, yogurt, and fresh dairy products for your household.',
+      en: 'Fresh dairy products for your household.',
     },
   },
   {
@@ -84,8 +84,8 @@ export const categories: CategoryItem[] = [
     icon: 'beef',
     image: '/images/product/poultry.jpg',
     title: {
-      bm: 'Daging & Ayam',
-      en: 'Meat & Poultry',
+      bm: 'Ayam',
+      en: 'Poultry',
     },
     description: {
       bm: 'Sumber protein berkualiti untuk masakan seisi keluarga.',
@@ -128,7 +128,7 @@ export const categories: CategoryItem[] = [
     },
     description: {
       bm: 'Aneka rempah-ratus untuk menambah aroma dan rasa masakan.',
-      en: 'A range of spices to enrich your cooking with aroma and flavor.',
+      en: 'Spices to enrich your cooking.',
     },
   },
   {
@@ -136,12 +136,12 @@ export const categories: CategoryItem[] = [
     icon: 'snowflake',
     image: '/images/product/frozen-meats.jpg',
     title: {
-      bm: 'Daging Sejuk Beku',
+      bm: 'Daging Beku',
       en: 'Frozen Meats',
     },
     description: {
       bm: 'Pilihan daging sejuk beku untuk penyediaan hidangan yang mudah.',
-      en: 'Frozen meat options for convenient meal preparation.',
+      en: 'Frozen meat options for meal preparation.',
     },
   },
   {
@@ -154,7 +154,7 @@ export const categories: CategoryItem[] = [
     },
     description: {
       bm: 'Pelbagai perencah dan sos untuk melengkapkan rasa hidangan anda.',
-      en: 'A variety of condiments and sauces to complete your meals.',
+      en: 'Condiments and sauces to complete your meals.',
     },
   },
   {
@@ -167,7 +167,7 @@ export const categories: CategoryItem[] = [
     },
     description: {
       bm: 'Pilihan sapuan roti seperti jem, mentega, dan kaya untuk sarapan harian.',
-      en: 'A selection of spreads like jam, butter, and kaya for everyday breakfasts.',
+      en: 'Spreads like jam, butter, and kaya for everyday breakfasts.',
     },
   },
   {
@@ -180,7 +180,7 @@ export const categories: CategoryItem[] = [
     },
     description: {
       bm: 'Pilihan kopi, teh, dan coklat untuk dinikmati setiap hari.',
-      en: 'A selection of coffee, tea, and chocolate for everyday enjoyment.',
+      en: 'Coffee, tea, and chocolate for everyday enjoyment.',
     },
   },
 ]
