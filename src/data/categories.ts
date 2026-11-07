@@ -15,71 +15,6 @@ export const categories: CategoryItem[] = [
     },
   },
   {
-    id: 'fresh-fruits',
-    icon: 'apple',
-    image: '/images/product/fruits-2.jpg',
-    title: {
-      bm: 'Buah-buahan',
-      en: 'Fresh Fruits',
-    },
-    description: {
-      bm: 'Buah-buahan berkualiti dan segar untuk dinikmati setiap hari.',
-      en: 'Quality, fresh fruits perfect for everyday enjoyment.',
-    },
-  },
-  {
-    id: 'frozen-food',
-    icon: 'snowflake',
-    image: '/images/product/frozen-foods.jpeg',
-    title: {
-      bm: 'Makanan Beku',
-      en: 'Frozen Food',
-    },
-    description: {
-      bm: 'Pelbagai pilihan makanan sejuk beku yang mudah dan praktikal.',
-      en: 'A range of frozen food for quick meal prep.',
-    },
-  },
-  {
-    id: 'seafood',
-    icon: 'fish',
-    image: '/images/product/seafood.jpeg',
-    title: {
-      bm: 'Makanan Laut',
-      en: 'Seafood',
-    },
-    description: {
-      bm: 'Pilihan makanan laut segar untuk masakan harian yang lazat.',
-      en: 'Fresh seafood selections for daily cooking.',
-    },
-  },
-  {
-    id: 'household-essentials',
-    icon: 'house',
-    image: '/images/product/household-items-2.jpeg',
-    title: {
-      bm: 'Asas Rumah',
-      en: 'Household Items',
-    },
-    description: {
-      bm: 'Keperluan penjagaan dan kebersihan rumah untuk kegunaan harian.',
-      en: 'Home care and cleaning items for everyday use.',
-    },
-  },
-  {
-    id: 'dairies',
-    icon: 'milk',
-    image: '/images/product/dairies.jpg',
-    title: {
-      bm: 'Produk Tenusu',
-      en: 'Dairies',
-    },
-    description: {
-      bm: 'Susu, keju, yogurt, dan produk tenusu segar untuk keluarga anda.',
-      en: 'Fresh dairy products for your household.',
-    },
-  },
-  {
     id: 'meat-poultry',
     icon: 'beef',
     image: '/images/product/poultry.jpg',
@@ -89,20 +24,7 @@ export const categories: CategoryItem[] = [
     },
     description: {
       bm: 'Sumber protein berkualiti untuk masakan seisi keluarga.',
-      en: 'Quality protein choices for your family meals.',
-    },
-  },
-  {
-    id: 'beverages',
-    icon: 'glass-water',
-    image: '/images/product/beverages.jpg',
-    title: {
-      bm: 'Minuman',
-      en: 'Beverages',
-    },
-    description: {
-      bm: 'Pilihan minuman harian daripada jus hingga minuman ringan.',
-      en: 'Everyday beverage options from juices to soft drinks.',
+      en: 'Quality protein choices for family meals.',
     },
   },
   {
@@ -119,6 +41,84 @@ export const categories: CategoryItem[] = [
     },
   },
   {
+    id: 'household-essentials',
+    icon: 'house',
+    image: '/images/product/household-items-2.jpeg',
+    title: {
+      bm: 'Asas Rumah',
+      en: 'Household Items',
+    },
+    description: {
+      bm: 'Keperluan penjagaan dan kebersihan rumah untuk kegunaan harian.',
+      en: 'Home care and cleaning items for everyday use.',
+    },
+  },
+  {
+    id: 'seafood',
+    icon: 'fish',
+    image: '/images/product/seafood.jpeg',
+    title: {
+      bm: 'Makanan Laut',
+      en: 'Seafood',
+    },
+    description: {
+      bm: 'Pilihan makanan laut segar untuk masakan harian yang lazat.',
+      en: 'Fresh seafood selections for daily cooking.',
+    },
+  },
+  {
+    id: 'frozen-food',
+    icon: 'snowflake',
+    image: '/images/product/frozen-foods.jpeg',
+    title: {
+      bm: 'Makanan Beku',
+      en: 'Frozen Food',
+    },
+    description: {
+      bm: 'Pelbagai pilihan makanan sejuk beku yang mudah dan praktikal.',
+      en: 'A range of frozen food for quick meal prep.',
+    },
+  },
+  {
+    id: 'fresh-fruits',
+    icon: 'apple',
+    image: '/images/product/fruits-2.jpg',
+    title: {
+      bm: 'Buah-buahan',
+      en: 'Fresh Fruits',
+    },
+    description: {
+      bm: 'Buah-buahan berkualiti dan segar untuk dinikmati setiap hari.',
+      en: 'Quality, fresh fruits perfect for everyday enjoyment.',
+    },
+  },
+  {
+    id: 'dairies',
+    icon: 'milk',
+    image: '/images/product/dairies.jpg',
+    title: {
+      bm: 'Produk Tenusu',
+      en: 'Dairies',
+    },
+    description: {
+      bm: 'Susu, keju, yogurt, dan produk tenusu segar untuk keluarga.',
+      en: 'Fresh dairy products for household.',
+    },
+  },
+  {
+    id: 'beverages',
+    icon: 'glass-water',
+    image: '/images/product/beverages.jpg',
+    title: {
+      bm: 'Minuman',
+      en: 'Beverages',
+    },
+    description: {
+      bm: 'Pilihan minuman harian daripada jus hingga minuman ringan.',
+      en: 'Everyday beverage options from juices to soft drinks.',
+    },
+  },
+  {
     id: 'spices',
     icon: 'leaf',
     image: '/images/product/spices.jpeg',
@@ -127,8 +127,8 @@ export const categories: CategoryItem[] = [
       en: 'Spices',
     },
     description: {
-      bm: 'Aneka rempah-ratus untuk menambah aroma dan rasa masakan.',
-      en: 'Spices to enrich your cooking.',
+      bm: 'Rempah-ratus untuk menambah aroma dan rasa masakan.',
+      en: 'Spices to enrich cooking.',
     },
   },
   {
@@ -149,12 +149,12 @@ export const categories: CategoryItem[] = [
     icon: 'shopping-basket',
     image: '/images/product/condiments-2.jpg',
     title: {
-      bm: 'Perencah & Sos',
-      en: 'Condiments',
+      bm: 'Sos',
+      en: 'Sauces',
     },
     description: {
-      bm: 'Pelbagai perencah dan sos untuk melengkapkan rasa hidangan anda.',
-      en: 'Condiments and sauces to complete your meals.',
+      bm: 'Pelbagai perencah dan sos untuk melengkapkan rasa hidangan.',
+      en: 'Condiments and sauces to complete meals.',
     },
   },
   {
