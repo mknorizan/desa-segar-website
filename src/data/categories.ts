@@ -10,7 +10,7 @@ export const categories: CategoryItem[] = [
       en: 'Vegetables',
     },
     description: {
-      bm: 'Pilihan sayur-sayuran segar setiap hari untuk hidangan sihat keluarga anda.',
+      bm: 'Pilihan sayur-sayuran segar setiap hari untuk hidangan sihat keluarga.',
       en: 'Daily fresh vegetables for healthy family meals.',
     },
   },

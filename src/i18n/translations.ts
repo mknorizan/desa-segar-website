@@ -135,30 +135,30 @@ export const translations: Record<Language, Translations> = {
     },
     nav: {
       home: 'Utama',
-      about: 'Tentang Kami',
-      products: 'Produk Kami',
-      outlets: 'Cawangan Kami',
-      contact: 'Hubungi Kami',
-      findOutlets: 'Cari Cawangan',
+      about: 'Tentang',
+      products: 'Produk',
+      outlets: 'Cawangan',
+      contact: 'Hubungi',
+      findOutlets: 'Cawangan',
       menu: 'Menu',
       close: 'Tutup',
     },
     hero: {
       label: 'KESEGARAN UNTUK SETIAP KEJIRANAN',
-      titleLine1: 'Barangan Segar.',
+      titleLine1: 'Barangan Sedia,',
       titleLine2: 'Keluarga Ceria.',
       description:
-        'Membawa kualiti, kesegaran, dan nilai harian lebih dekat kepada komuniti anda.',
+        'Membawa kualiti, kesegaran, dan nilai harian lebih dekat kepada komuniti.',
       primaryCta: 'Cari Cawangan',
-      secondaryCta: 'Terokai Produk Kami',
-      highlights: ['Hasil Segar Berkualiti', 'Nilai Harian Terbaik', 'Pasaraya Kejiranan Anda'],
+      secondaryCta: 'Terokai Produk',
+      highlights: ['Hasil Segar Berkualiti', 'Nilai Harian Terbaik', 'Pasaraya Kejiranan'],
     },
     products: {
       label: 'PRODUK KAMI',
       headingLine1: 'Produk Berkualiti untuk',
       headingLine2: 'Kehidupan Harian Lebih Baik',
       description:
-        'Daripada hasil segar hingga keperluan harian, Desa Segar menawarkan pelbagai produk berkualiti untuk keperluan keluarga anda.',
+        'Daripada hasil segar hingga keperluan harian, Desa Segar menawarkan pelbagai produk berkualiti untuk keperluan keluarga.',
       viewAll: 'Lihat Semua Produk',
     },
     sara: {
@@ -187,7 +187,7 @@ export const translations: Record<Language, Translations> = {
           description: 'Barangan runcit mampu milik untuk keperluan isi rumah.',
         },
         {
-          title: 'Lokasi Mudah Diakses',
+          title: 'Lokasi Mudah Akses',
           description: 'Pasaraya kejiranan untuk pengalaman membeli-belah mudah.',
         },
         {
@@ -222,23 +222,23 @@ export const translations: Record<Language, Translations> = {
         description: 'Laman rasmi Pasaraya Desa Segar untuk komuniti kejiranan di Malaysia.',
       },
       about: {
-        title: 'Tentang Kami | Pasaraya Desa Segar',
+        title: 'Tentang | Pasaraya Desa Segar',
         intro:
           'Desa Segar memberi tumpuan kepada produk berkualiti, kesegaran, harga berpatutan, dan pengalaman membeli-belah mesra keluarga.',
       },
       products: {
-        title: 'Produk Kami | Pasaraya Desa Segar',
+        title: 'Produk | Pasaraya Desa Segar',
         intro:
           'Terokai rangkaian kategori utama yang direka untuk memenuhi keperluan harian keluarga anda.',
       },
       outlets: {
-        title: 'Cawangan Kami | Pasaraya Desa Segar',
+        title: 'Cawangan | Pasaraya Desa Segar',
         intro:
           'Cari cawangan Desa Segar berdekatan untuk pengalaman membeli-belah yang lebih mudah.',
         noResult: 'Tiada cawangan ditemui untuk carian ini.',
       },
       contact: {
-        title: 'Hubungi Kami | Pasaraya Desa Segar',
+        title: 'Hubungi | Pasaraya Desa Segar',
         intro: 'Hubungi kami untuk pertanyaan umum dan maklumat lanjut.',
         eyebrow: 'KAMI SEDIA MEMBANTU',
         leftCardTitle: 'Chat atau E-mel Kami',
@@ -274,7 +274,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       description:
-        'Pasaraya kejiranan yang membawa hasil segar, keperluan berkualiti, dan nilai harian untuk komuniti anda.',
+        'Pasaraya kejiranan yang membawa hasil segar, keperluan berkualiti, dan nilai harian untuk komuniti.',
       quickLinks: 'Pautan Pantas',
       productCategories: 'Kategori Produk',
       contact: 'Hubungi',
@@ -306,11 +306,11 @@ export const translations: Record<Language, Translations> = {
     },
     nav: {
       home: 'Home',
-      about: 'About Us',
-      products: 'Our Products',
-      outlets: 'Our Outlets',
-      contact: 'Contact Us',
-      findOutlets: 'Find Our Outlets',
+      about: 'About',
+      products: 'Products',
+      outlets: 'Outlets',
+      contact: 'Contact',
+      findOutlets: 'Outlets',
       menu: 'Menu',
       close: 'Close',
     },
@@ -319,17 +319,17 @@ export const translations: Record<Language, Translations> = {
       titleLine1: 'Fresh Groceries.',
       titleLine2: 'Happy Families.',
       description:
-        'Bringing quality, freshness, and everyday value closer to your neighbourhood.',
+        'Bringing quality, freshness, and everyday value closer to the neighbourhood.',
       primaryCta: 'Find Our Outlets',
       secondaryCta: 'Explore Our Products',
-      highlights: ['Fresh Quality Produce', 'Everyday Great Value', 'Your Neighbourhood Supermarket'],
+      highlights: ['Fresh Quality Produce', 'Everyday Great Value', 'Friendly Supermarket'],
     },
     products: {
       label: 'OUR PRODUCTS',
       headingLine1: 'Quality Products for',
       headingLine2: 'a Better Everyday',
       description:
-        "From fresh produce to everyday essentials, Desa Segar offers a wide range of quality products to meet your family's needs.",
+        "From fresh produce to everyday essentials, Desa Segar offers a wide range of quality products to meet families' needs.",
       viewAll: 'View All Products',
     },
     sara: {
@@ -384,7 +384,7 @@ export const translations: Record<Language, Translations> = {
       headingLine1: 'Your Neighbourhood,',
       headingLine2: 'Our Commitment.',
       description:
-        'We are here to serve our local communities with fresh products, quality essentials, and a better everyday shopping experience.',
+        'We are here to serve the communities with fresh products, quality essentials, and a better everyday shopping experience.',
       aboutLink: 'Learn About Us',
     },
     pages: {
