@@ -53,11 +53,11 @@ export function HeroSection() {
 
           {/* Left content */}
           <div className="relative z-10 lg:pr-4">
-            <p className="mb-5 text-xs font-bold uppercase tracking-[0.18em] text-leafGreen">
+            <p className="mb-5 text-s font-bold uppercase tracking-[0.18em] text-leafGreen">
               {t.hero.label}
             </p>
 
-            <h1 className="max-w-[620px] text-[clamp(2.5rem,4.5vw,4.5rem)] font-extrabold leading-[1.08] tracking-tight text-leafGreen">
+            <h1 className="max-w-[620px] text-[clamp(2.25rem,4vw,4rem)] font-extrabold leading-[1.08] tracking-tight text-leafGreen">
               {t.hero.titleLine1}
               <span className="block text-brandBlue">
                 {t.hero.titleLine2}
@@ -80,8 +80,8 @@ export function HeroSection() {
             </div>
 
             {/* Brand highlights */}
-            <ul className="mt-10 hidden max-w-[560px] grid-cols-1 gap-4 text-xs font-medium text-charcoal sm:grid sm:grid-cols-3 sm:gap-5">
-              <li className="flex items-center gap-3">
+            <ul className="mt-8 hidden text-xs font-medium text-charcoal sm:inline-flex sm:items-center sm:gap-3">
+              <li className="flex items-center gap-2">
                 <Leaf
                   className="shrink-0 text-brandGreen"
                   size={23}
@@ -90,7 +90,7 @@ export function HeroSection() {
                 <span>{t.hero.highlights[0]}</span>
               </li>
 
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-2">
                 <Tag
                   className="shrink-0 text-brandGreen"
                   size={23}
@@ -99,7 +99,7 @@ export function HeroSection() {
                 <span>{t.hero.highlights[1]}</span>
               </li>
 
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-2">
                 <ShoppingCart
                   className="shrink-0 text-brandGreen"
                   size={23}

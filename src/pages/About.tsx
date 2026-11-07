@@ -49,7 +49,7 @@ export function AboutPage() {
     },
     {
       key: 'our-story',
-      title: language === 'bm' ? 'Kisah Kami' : 'Our Story',
+      title: language === 'bm' ? 'Latar Belakang' : 'Background Story',
       body:
         language === 'bm' ? (
           <>
@@ -155,7 +155,7 @@ export function AboutPage() {
       <Container>
         <div className="grid items-stretch gap-0 lg:grid-cols-[1fr_1.1fr]">
           <div className="relative z-10 p-6 sm:p-8 lg:p-10">
-              <h1 className="text-4xl font-extrabold text-leafGreen md:text-5xl">{t.pages.about.title.split('|')[0].trim()}</h1>
+              <h1 className="text-4xl font-extrabold text-leafGreen md:text-5xl">{t.pages.about.pageTitle}</h1>
               <p className="mt-4 max-w-2xl text-lg text-charcoal/80">{t.pages.about.intro}</p>
           </div>
 
