@@ -33,17 +33,17 @@ export function SaraPromoSection() {
                 </div>
               </div>
 
-              <div className="mt-6 grid gap-4 sm:grid-cols-3 sm:gap-4">
+              <div className="mt-6 flex items-start justify-between gap-2 sm:grid sm:grid-cols-3 sm:gap-4">
                 {t.sara.steps.map((step, index) => {
                   const Icon = stepIcons[index]
                   return (
-                    <div key={step} className="relative text-center">
+                    <div key={step} className="relative flex flex-1 items-center justify-center sm:block sm:text-center">
                       <span className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full border border-brandGreen/20 bg-[#e8f9e9] text-brandGreen shadow-sm">
                         <Icon size={25} />
                       </span>
-                      <p className="mt-2 text-sm font-semibold leading-snug text-leafGreen">{step}</p>
+                      <p className="mt-2 hidden text-sm font-semibold leading-snug text-leafGreen sm:block">{step}</p>
                       {index < t.sara.steps.length - 1 ? (
-                        <span className="absolute -right-3 top-8 hidden -translate-y-1/2 text-brandGreen sm:inline-flex">
+                        <span className="absolute -right-3 top-1/2 inline-flex -translate-y-1/2 text-brandGreen sm:top-8">
                           <ArrowRight size={18} />
                         </span>
                       ) : null}
@@ -56,7 +56,7 @@ export function SaraPromoSection() {
                 href="https://sara.gov.my/"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-brandGreen px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandGreen/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandGreen focus-visible:ring-offset-2"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[rgb(40,46,102)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[rgb(34,39,87)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(40,46,102)] focus-visible:ring-offset-2"
               >
                 <ExternalLink size={17} />
                 {t.sara.cta}
@@ -65,7 +65,7 @@ export function SaraPromoSection() {
               <p className="mt-3 text-xs text-charcoal/65">{t.sara.disclaimer}</p>
             </div>
 
-            <aside className="relative z-10 mx-auto w-full max-w-[620px] overflow-hidden lg:pl-4 lg:translate-x-8 xl:translate-x-10">
+            <aside className="relative z-10 mx-auto hidden w-full max-w-[620px] overflow-hidden sm:block lg:pl-4 lg:translate-x-8 xl:translate-x-10">
               <img
                 src="/images/sara-illustration.png"
                 alt={t.sara.basketAlt}

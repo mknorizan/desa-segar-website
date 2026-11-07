@@ -80,7 +80,7 @@ export function HeroSection() {
             </div>
 
             {/* Brand highlights */}
-            <ul className="mt-10 grid max-w-[560px] grid-cols-1 gap-4 text-xs font-medium text-charcoal sm:grid-cols-3 sm:gap-5">
+            <ul className="mt-10 hidden max-w-[560px] grid-cols-1 gap-4 text-xs font-medium text-charcoal sm:grid sm:grid-cols-3 sm:gap-5">
               <li className="flex items-center gap-3">
                 <Leaf
                   className="shrink-0 text-brandGreen"
@@ -110,8 +110,19 @@ export function HeroSection() {
             </ul>
           </div>
 
-          {/* Right image */}
-          <div className="relative h-[330px] w-full sm:h-[430px] lg:h-[540px] xl:h-[610px]">
+          {/* Right image - mobile full width */}
+          <div className="relative -mx-4 h-[360px] w-[calc(100%+2rem)] sm:-mx-6 sm:h-[430px] sm:w-[calc(100%+3rem)] lg:hidden">
+            <img
+              src={heroImage}
+              alt="Fresh groceries at Desa Segar supermarket"
+              className="h-full w-full object-cover object-center"
+              style={{ objectPosition: 'center center' }}
+              fetchPriority="high"
+            />
+          </div>
+
+          {/* Right image - desktop clipped */}
+          <div className="relative hidden h-[540px] w-full lg:block xl:h-[610px]">
             <div
               className="absolute inset-0 overflow-hidden lg:-right-[max(0px,calc((100vw_-_100%)_/_2))] lg:-left-10"
               style={{
