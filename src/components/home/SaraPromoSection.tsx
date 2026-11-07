@@ -15,8 +15,8 @@ export function SaraPromoSection() {
           <div aria-hidden="true" className="pointer-events-none absolute right-5 top-4 h-24 w-16 rotate-[-20deg] rounded-[100%_0_100%_0] bg-brandBlue/10" />
           <div aria-hidden="true" className="pointer-events-none absolute -bottom-12 right-10 h-48 w-28 rotate-[22deg] rounded-[100%_0_100%_0] bg-brandGreen/10" />
 
-          <div className="relative grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10">
-            <div className="relative z-20">
+          <div className="relative grid items-center gap-6 md:min-h-[520px] md:items-stretch lg:min-h-[560px] lg:gap-0">
+            <div className="relative z-20 md:max-w-[60%] md:pr-6 lg:max-w-[58%] lg:pr-10">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-brandGreen">{t.sara.label}</p>
 
               <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-start lg:gap-6">
@@ -65,12 +65,28 @@ export function SaraPromoSection() {
               <p className="mt-3 text-xs text-charcoal/65">{t.sara.disclaimer}</p>
             </div>
 
-            <aside className="relative z-10 mx-auto hidden w-full max-w-[620px] overflow-hidden sm:block lg:pl-4 lg:translate-x-8 xl:translate-x-10">
+            <aside className="relative z-10 hidden w-full overflow-hidden md:absolute md:-bottom-7 md:-right-6 md:-top-7 md:block md:h-auto md:w-[40%] md:rounded-none lg:-bottom-10 lg:-right-10 lg:-top-10 lg:w-[38%]">
               <img
-                src="/images/sara-illustration.png"
+                src="/images/sara/IMG_4481.jpg"
                 alt={t.sara.basketAlt}
                 loading="lazy"
-                className="h-[250px] w-full object-contain object-right-center sm:h-[300px] lg:h-[350px]"
+                className="h-full w-full object-cover object-[10%_center]"
+                style={{
+                  WebkitMaskImage:
+                    'radial-gradient(145% 125% at -8% 50%, transparent 0%, transparent 23%, rgba(0,0,0,0.7) 46%, #000 62%), linear-gradient(to right, transparent 0%, rgba(0,0,0,0.92) 24%, #000 40%, #000 100%)',
+                  maskImage:
+                    'radial-gradient(145% 125% at -8% 50%, transparent 0%, transparent 23%, rgba(0,0,0,0.7) 46%, #000 62%), linear-gradient(to right, transparent 0%, rgba(0,0,0,0.92) 24%, #000 40%, #000 100%)',
+                  WebkitMaskRepeat: 'no-repeat',
+                  maskRepeat: 'no-repeat',
+                }}
+              />
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-y-0 left-0 hidden w-24 bg-gradient-to-r from-[#f7fff8] via-[#f7fff8]/75 to-transparent md:block"
+              />
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute -left-10 top-[16%] hidden h-[44%] w-24 rounded-[100%_0_100%_0] bg-[#f5fff7]/85 blur-[2px] md:block"
               />
             </aside>
           </div>
